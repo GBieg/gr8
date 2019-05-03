@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  color: white;
+}
+
+
+.head{
+  transition: .5s;
+}
+
+body{
+  background-color: #16171C;
+}
+
+#back-pic:before{
+  content: "";
+  position: absolute;
+  background: url("background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: .7;
+  background-color:
+}
+
+.enter-bar{
+  position: relative;
+  width: 100%;
+  background: #8c1e2b;
+  height: 5vh;
+  padding: 1vh;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.enter-bar:hover{
+  background: #7b0d1a;
+  transition: .5s;
+}
+
+#title{
+  padding-top: 45vh;
+  min-height: 50vh;
+}
+
+h1{
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 6em;
+  letter-spacing: .1em;
+  padding:
+}
+
+h2{
+  color: #8c1e2b;
+}
+
+#content{
+  background-color: #16171C;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95vh;
+}
+
+#content h2{
+  padding-bottom: 5vh;
+}
+
+#text{
+  display: inline-block;
+  position: relative;
+  text-align: justify;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+#list{
+ max-width: 95vh
+ justify: center;
+}
+
+#vid{
+ position: relative;
+ display: inline-block;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+
+#vid > iframe{
+  height: 50vh;
+  width: 95vh;
+}
+
+#list{
+  background-color: #060607;
+  padding: 15px;
+
+}
+
+#head-list > h2{
+  color: white;
+  text-align: left;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.tour{
+  display: flex;
+  position: relative;
+  margin: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 25px;
+}
+
+
+.tour > .ticket > a{
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.tour > .ticket > a:hover{
+  background-color: white;
+  color: darkgray;
+}
+
+#contact{
+  padding: 3em;
+}
+
+#contact > a{
+  justify-content: space-between;
+  text-decoration: none;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.5em;
+}
+
+footer{
+  padding-top: 2em;
+  text-align: center;
+  color: gray;
+}

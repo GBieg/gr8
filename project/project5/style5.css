@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #5f45b5;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+nav{
+  background: white;
+  border: 1px solid;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+}
+
+nav ul{
+  text-align: center;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  margin: 10px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover{
+  font-weight: bold;
+}
+
+#welcome-section{
+  background-color: lightgreen;
+  padding-top: 45vh;
+  min-height: 55vh;
+  letter-spacing: 2px;
+}
+
+#projects header h2{
+  padding: 50px;
+}
+
+
+.project-tile .pic-work{
+  width: 100%;
+  height: 200px;
+}
+
+.project-tile{
+  margin: 40px 100px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  border: 2px solid;
+  height: 240px;
+  width: 360px;
+  transition: transform .2s;
+}
+
+.project-tile:hover{
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+#profile-link{
+  border: 2px solid;
+  border-radius: 4px;
+  height: 25px;
+  width: 180px;
+  background-color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px auto 50px;
+  display: block;
+  transition: transform .2s;
+  color: black;
+}
+
+#profile-link:hover{
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+
+#con-head{
+  padding: 10px;
+  margin: 25px;
+}
+
+.foot-contact{
+  display: inline-block;
+  font-weight: bold;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  color: black;
+  border: 2px solid;
+  border-radius: 100%;
+  background-color: white;
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  margin: 40px 25px;
+}
+
+.foot-contact:hover{
+  background: lightgray;
+}
+
+@media only screen and (max-with: 350px){
+  .foot-contact{
+    border: 2px dashed gray;
+    width: 90px;
+    height: 20px;
+    line-height: normal;
+  }
+}
+
+footer{
+  background-color: #22313F;
+  padding: 20px 0px;
+  color: white;
+}
