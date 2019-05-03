@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+section{
+  height: 100vh;
+}
+
+.one{
+  padding: 30vh;
+  background: #FFC145;
+  position: relative;
+}
+
+.one > p{
+  background: rgba(0,0,0,.3);
+  color: rgba(0,0,0,.3);
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.one::after,
+.one::before{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #FFC145;
+  bottom: -1em;
+  z-index: 100;
+}
+
+.one::before{
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+.one::after{
+  left:50%;
+  transform: skew(0, -20deg);
+}
+
+.two{
+
+  background: #84b231;
+  z-index: 10;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+
+}
+
+.pic{
+  margin: 30vh;
+  max-width: 50vh;
+  max-height: 50vh;
+  clip-path: polygon(5% 5%, 100% 0, 75% 100%, 0 100%);
+}
+
+.three{
+background: #FF6B6C;
+padding: 50vh;
+}
