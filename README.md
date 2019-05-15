@@ -12,3 +12,9 @@ As well in the spare time I study:
 - Grokking Algorithms: An illustrated guide for programmers and other curious people by Aditya Bhargava;
 - http://eloquentjavascript.net/; 
 - French and Russian.
+
+Upcoming goals/challenges:
+- https://javascript30.com/
+- The Open Source Computer Science Degree;
+- http://speakingjs.com/
+- https://frontendmasters.com/courses/javascript-hard-parts/
