@@ -1,9 +1,9 @@
 Hello, I'm Grzegorz.
 My goal is to become in the near future a Junior Front-End Developer. Here is how I try to achive it: 
 
-The current way how I learn is:
 - FreeCodeCamp;
 - HakerRank;
+- https://kursjs.pl/
 - YouTube tuts like: Dev Ed, The Coding Train and others;
 - projects (included on the GitHub).
 
