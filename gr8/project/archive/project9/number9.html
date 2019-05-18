@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Noiz!</title>
+	<meta name="description" content="First web with JS" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style9.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<header>
+	<h1>Make some noizzze!</h1>
+	<p>Just click on the color and see the magic happen for you!</p>
+</header>
+
+<main>
+
+<div class = "flesh">
+<div class="pads">
+	<div class="pad1">
+		<audio class="sound" src="./sounds/bubbles.mp3"></audio>
+	</div>
+	<div class = "pad2">
+		<audio class="sound"src="./sounds/clay.mp3"></audio>
+	</div>
+	<div class = "pad3">
+		<audio class="sound" src="./sounds/confetti.mp3"></audio>
+	</div>
+	<div class = "pad4">
+		<audio class="sound" src="./sounds/glimmer.mp3"></audio>
+	</div>
+	<div class = "pad5">
+		<audio class="sound" src="./sounds/moon.mp3"></audio>
+	</div>
+	<div class = "pad6">
+		<audio class="sound" src="./sounds/ufo.mp3"  onclick="addEventListener()">></audio>
+	</div>
+</div>
+
+<button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+</div>
+
+</main>
+<script src="index.js">
+</script>
+
+</body>
+</html>

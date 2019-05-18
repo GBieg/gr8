@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@media{
+body {
+
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: justify;
+}
+
+body{
+  background: #cd5268;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+ul a{
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+#navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-right: 1px #ccc solid;
+  width: 300px;
+  align-items: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #bc4157;
+  box-sizing: border-box;
+
+  max-width: 250px;
+  flex: 1;*/
+}
+
+#navbar li{
+  list-style: none;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+#main-doc{
+ display: flex;
+ margin-left: 310px;
+ padding: 10px;
+ position: absolute;
+}
+
+#list li{
+  padding: 5px;
+  margin-left: 25px;
+}
+
+header{
+  text-align: center;
+  color: black;
+  margin: 10px;
+  font-size: 24px;
+  padding: 5px;
+}
+
+#navbar header{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#head-main{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p{
+  padding: 10px;
+}
+
+code{
+  padding: 15px;
+  background-color: gray;
+  display: block;
+  white-space: pre;
+  text-align: left;
+  position: relative;
+}
+
+@media only screen and (max-width: 400px) {
+  body{
+    font-size: 10px;
+  }
