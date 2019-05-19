@@ -89,6 +89,7 @@ header .nav-main ul li a:hover{
   color: #e54148
 }
 
+
 @media (max-width: 1199px) and (min-width: 992px){
 .social .social-icon img{
   width: 27px;
@@ -105,5 +106,33 @@ header .nav-main ul li a:hover{
   }
 header .nav-main{
   display: none;
+}
+
+.burger{
+  cursor: pointer;
+  position: absolute;
+  right:0;
+  bottom: 18%;
+  text-align: center;
+  left: 0;
+  z-index: 1;
+}
+
+.burger a{
+  position: relative;
+  width: 27px;
+  height: 3px;
+  line-height: 3px;
+  display: inline-block;
+  padding: 13px;
+
+}
+
+.burger a span{
+  width: 26px;
+  height: 3px;
+  margin-bottom: 7px;
+  display: block;
+  background-color: #fff;
 }
 }
