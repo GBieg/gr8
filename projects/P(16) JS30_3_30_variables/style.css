@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&subset=latin-ext');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+
+body
+{
+  font-family: Quicksand, sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.controls {
+  margin: 0 auto;
+}
+
+.controls label{
+  display: inline-block;
+  padding: 20px 0;
+}
+
+input{
+  cursor: pointer;
+}
+img{
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  display: block;
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+}

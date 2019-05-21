@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Variables</title>
+	<meta name="lorem" content="" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+<h2>CSS Variables with Wes Bros</h2>
+<div class="controls">
+
+	<label for="spacing">Spacing</label>
+	<input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+	<label for="blur">Blur</label>
+	<input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+	<label for="base">Base color</label>
+	<input id="base" type="color" name="base" value="#ffc600">
+
+</div>
+
+<img src="https://pikwizard.com/photos/6f1abc20cca6ce06a4849dd3efa8262b-m.jpg">
+
+<script>
+
+	const inputs = document.querySelectorAll('.controls input'); // take all input from .controls
+
+	function handleUpdate(){
+		const suffix = this.dataset.sizing || ''; // dataset = DOM/object therefore we have data-sizing in input; or '' becasue color has no value
+		document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+	}
+// take the whole document -> go into CSS -> because we use -- we can you the syntex ->
+inputs.forEach(input => input.addEventListener('change', handleUpdate));
+inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+// inputs - forEach input during change or mousemove update handle function
+
+</script>
+
+</body>
+</html>
