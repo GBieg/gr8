@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Type Ahead 👀</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form class="search-form">
+<input type="text" class="search" placeholder="City or State">
+<ul class="suggestions">
+  <li>Filter for a city</li>
+  <li>or a state</li>
+</ul>
+</form>
+<script>
+
+// ARR
+
+const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+// TAKING THE DATA
+
+const cities = [];
+
+fetch(endpoint) // simple fetch returns promise -> therefore .then() to work with it
+  .then(blob => blob.json()) // data doesn't know what we want -> therefore we have to convert RAW data into the .json
+  .then(data => cities.push(...data)) // how to get data into const cities? cites = data (only with LET) or push (but not only .push = [[]] nested arr) with ES6 spread
+
+// SEARCH
+
+function findMatches(wordToMatch, cities){
+  return cities.filter(place => {
+    // how to make function to look for a cites or states? below
+
+    // how to put a varaible into a REGEX?
+  const regex = new RegExp(wordToMatch, 'gi'); //g = global; i = insensitive
+  return place.city.match(regex) || place.state.match(regex)
+
+  });
+}
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+function displayMatches(){
+  const matchArray = findMatches(this.value, cities);
+  const html = matchArray.map(place => {
+    const regex = new RegExp(this.value, 'gi');
+    const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
+    const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
+
+    return `
+      <li>
+        <span class="name">${cityName}, ${stateName}</span>
+        <span class="population">${numberWithCommas(place.population)}</span>
+      </li>
+    `
+  })
+  .join('');
+    suggestions.innerHTML = html;
+  }
+
+const searchInput = document.querySelector('.search'); // looking at HTML
+const suggestions = document.querySelector('.suggestions'); // looking at HTML
+
+searchInput.addEventListener('change', displayMatches); // it only CHANGE when you click somewhere else
+searchInput.addEventListener('keyup', displayMatches); // tharefore we have to use as well keyup
+
+</script>
+</body>
+</html>
