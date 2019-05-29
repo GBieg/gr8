@@ -4,19 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" type="text/css" />
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
   <title>Tetris</title>
+  <style>
+  body{
+    background: gray;
+  }
+  #score{
+  display: inline-block;
+  }
+  div{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Press Start 2P', Consolas, monospace;
+  margin: 10px;
+  }
+  canvas{
+  display: block;
+  margin:0 auto;
+  border: 1px solid black;
+  }
+  </style>
 </head>
 <body>
-  <div id="root">
-      <h1>
-          <span style="color: red">T</span><span style="color: orange">E</span><span style="color: yellow">T</span><span style="color: green">R</span><span style="color: cyan">I</span><span style="color: purple">S</span>
-      </h1>
+
+  <div>Tetris</div><br>
+ <canvas id="tetris" width="200" height="400"></canvas>
+ <div>
+    Score : <div id="score">0</div>
   </div>
-  <script type="module">
-  import {} from "main.js";
-  </script>
-</script>
+
+  <script src="tetrominoes.js"></script>
+  <script src="tetris.js"></script>
 </body>
 </html>
