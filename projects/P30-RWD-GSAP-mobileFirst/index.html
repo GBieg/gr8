@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>AwesomeSite</title>
+	<meta name="lorem" content="" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.min.css" type="text/css" />
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">John</a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <section class="hero">
+
+      <div class="inner">
+        <div class="clipper">
+          <h1>Go!</h1>
+        </div>
+
+        <div class="anim-panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia et sequi maxime, odio.</p>
+          <a href="#" class="read-btn primary">Get Ready!</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="sidebar">
+      <div class="inner">
+        <div class="clipper">
+          <h2>More</h2>
+        </div>
+
+        <div class="anim-panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia et sequi maxime, odio.</p>
+
+          <a href="#" class="read-btn">Read more</a>
+        </div>
+			</div>
+    </section>
+
+    <section class="subscribe">
+      <div class="inner">
+        <div class="clipper">
+          <h2>Subscribe</h2>
+        </div>
+
+        <div class="anim-panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia et sequi maxime, odio.</p>
+
+          <input placeholder="Email Address" type="text" name="email">
+          <button class="cta">Subscribe now!</button>
+
+        </div>
+			</div>
+    </section>
+  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event){
+	window.addEventListener("load", function(e){
+
+		document.body.style.display = "block";
+
+		var tl = new TimelineMax();
+		tl.staggerFrom('section', 2,{
+			opacity: 0,
+			scale: .5,
+			ease: Power2.easeOut
+		}, 0.2)
+
+		tl.staggerFrom('h1, h2', .5, {
+			opacity: 0,
+			y: -40,
+			ease: Power2.easeInOut
+		}, 0.2, "-=2")
+
+		tl.staggerFrom('.anim-panel', 1,{
+			opacity: 0,
+			y: -40,
+			ease: Power2.easeInOut
+		}, 0.2, "-=1.5")
+	})
+})
+
+</script>
+
+</body>
+</html>
